@@ -27,11 +27,14 @@ def automated_readability_index(sentence):
     if resultado_arredondado > 14:
         resultado_arredondado = 14
         print(f'O índice de legibilidade após aplicação de regra é: {resultado_arredondado}')
+        return resultado_arredondado
     elif resultado_arredondado < 0:
         resultado_arredondado = 1
         print(f'O índice de legibilidade após aplicação de regra é: {resultado_arredondado}')
+        return resultado_arredondado
     else:
         print(f'O índice de legibilidade após aplicação de regra é: {resultado_arredondado}')
+        return resultado_arredondado
 
 
 automated_readability_index(sentence)
